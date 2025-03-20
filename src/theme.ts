@@ -1,58 +1,61 @@
 import { createTheme } from '@mui/material/styles';
-import { red, blueGrey, amber } from '@mui/material/colors';
 
 const theme = createTheme({
   palette: {
     primary: {
-      main: '#1976d2', // A popular blue for primary
-      light: '#63a4ff', // Lighter shade of primary
-      dark: '#004ba0', // Darker shade of primary
-      contrastText: '#ffffff', // Text color on primary buttons
+      main: '#1b4332', // Dark moss green as the main background color
+      light: '#2d6a4f', // Lighter moss green for accents
+      dark: '#081c15', // Even darker moss green for hover effects
+      contrastText: '#ffffff', // White text for contrast
     },
     secondary: {
-      main: '#dc004e', // A vibrant red for secondary
-      light: '#ff5c8d', // Lighter shade of secondary
-      dark: '#9a0036', // Darker shade of secondary
-      contrastText: '#ffffff', // Text color on secondary buttons
-    },
-    error: {
-      main: red.A400, // Predefined Material-UI red for errors
-    },
-    warning: {
-      main: amber[500], // Amber for warnings
-    },
-    info: {
-      main: blueGrey[500], // Blue-grey for informational messages
+      main: '#264653', // Dark turquoise for smaller elements
+      light: '#2a9d8f', // Lighter turquoise for accents
+      dark: '#1e6f63', // Darker turquoise for hover effects
+      contrastText: '#ffffff', // White text for contrast
     },
     success: {
-      main: '#4caf50', // Green for success
+      main: '#4caf50', // Moss green for success or small accents
+      light: '#81c784', // Lighter moss green for hover effects
+      dark: '#388e3c', // Darker moss green for stronger accents
+      contrastText: '#ffffff', // White text for contrast
     },
     background: {
-      default: '#f5f5f5', // Light grey background
-      paper: '#ffffff', // White background for cards and surfaces
+      default: '#081c15', // Very dark moss green as the main background
+      paper: '#1b4332', // Dark moss green for cards and surfaces
+    },
+    text: {
+      primary: '#ffffff', // White text for readability on dark backgrounds
+      secondary: '#2a9d8f', // Lighter turquoise for secondary text
     },
   },
   typography: {
-    fontFamily: 'Roboto, Arial, sans-serif', // Default Material-UI font
+    fontFamily: 'Montserrat, Arial, sans-serif', // Default Material-UI font
     h1: {
       fontSize: '2.5rem',
       fontWeight: 700,
+      color: '#ffffff', // White for headings
     },
     h2: {
       fontSize: '2rem',
       fontWeight: 600,
+      fontStyle: 'italic',
+      color: '#ffffff', // White for subheadings
     },
     h3: {
       fontSize: '1.75rem',
       fontWeight: 500,
+      color: '#2a9d8f', // Lighter turquoise for smaller headings
     },
     body1: {
       fontSize: '1rem',
       lineHeight: 1.5,
+      color: '#ffffff', // White for body text
     },
     body2: {
       fontSize: '0.875rem',
       lineHeight: 1.43,
+      color: '#81c784', // Lighter moss green for secondary body text
     },
     button: {
       textTransform: 'none', // Prevent uppercase transformation for buttons
@@ -76,10 +79,17 @@ const theme = createTheme({
           padding: '8px 16px', // Default padding
         },
         containedPrimary: {
-          backgroundColor: '#1976d2',
-          color: '#ffffff',
+          backgroundColor: '#2d6a4f', // Lighter moss green for primary buttons
+          color: '#ffffff', // White text
           '&:hover': {
-            backgroundColor: '#004ba0', // Darker shade on hover
+            backgroundColor: '#1b4332', // Dark moss green on hover
+          },
+        },
+        containedSecondary: {
+          backgroundColor: '#264653', // Dark turquoise for secondary buttons
+          color: '#ffffff', // White text
+          '&:hover': {
+            backgroundColor: '#1e6f63', // Darker turquoise on hover
           },
         },
       },
@@ -87,7 +97,7 @@ const theme = createTheme({
     MuiAppBar: {
       styleOverrides: {
         root: {
-          backgroundColor: '#1976d2', // Primary color for AppBar
+          backgroundColor: '#081c15', // Very dark moss green for the AppBar
           color: '#ffffff', // White text
         },
       },
@@ -96,7 +106,8 @@ const theme = createTheme({
       styleOverrides: {
         root: {
           borderRadius: '12px', // Rounded corners for cards
-          boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)', // Subtle shadow
+          boxShadow: '0 4px 6px rgba(0, 0, 0, 0.2)', // Slightly stronger shadow
+          backgroundColor: '#1b4332', // Dark moss green for card backgrounds
         },
       },
     },

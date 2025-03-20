@@ -1,6 +1,7 @@
 // filepath: c:\repo\ingridswebsite\src\components\Hero.tsx
 import React from 'react';
 import { Typography, Button, Box } from '@mui/material';
+import WavingHandIcon from '@mui/icons-material/WavingHand';
 
 const Hero = () => {
   return (
@@ -13,10 +14,16 @@ const Hero = () => {
       }}
     >
       <Typography variant="h2" gutterBottom>
-        Hi, I'm Ingrid!
+    Hi, I'm Ingrid {' '}
+        <WavingHandIcon
+          sx={{
+            fontSize: '1em', // Adjust the size of the icon
+            color: 'primary.light', // Use a color from your theme
+          }}
+        />{' '}
       </Typography>
       <Typography variant="h5" gutterBottom>
-        A passionate developer and designer.
+     A passionate full stack developer
       </Typography>
       <Button variant="contained" color="secondary" size="large">
         Learn More About Me

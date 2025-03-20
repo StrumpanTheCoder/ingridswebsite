@@ -4,7 +4,7 @@ import { Grid, Card, CardContent, Typography, Button } from '@mui/material';
 
 const Projects = () => {
   const projectList = [
-    { title: 'Project 1', description: 'Countdown', link: '#' },
+    { title: 'Project 1', description: 'CountdownApp', link: 'https://github.com/StrumpanTheCoder/CountdownApp' },
     { title: 'Project 2', description: 'Lalala', link: '#' },
     { title: 'Project 3', description: 'And one more', link: '#' },
   ];

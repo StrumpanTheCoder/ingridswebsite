@@ -1,6 +1,5 @@
-// filepath: c:\repo\ingridswebsite\src\components\Hero.tsx
 import React from "react";
-import { Typography, Button, Box } from "@mui/material";
+import { Typography, Box } from "@mui/material";
 import WavingHandIcon from "@mui/icons-material/WavingHand";
 import meCadiz3 from "../assets/images/profile-pic-cadiz3.jpg";
 

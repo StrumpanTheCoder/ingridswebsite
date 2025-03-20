@@ -86,10 +86,10 @@ const theme = createTheme({
           },
         },
         containedSecondary: {
-          backgroundColor: '#264653', // Dark turquoise for secondary buttons
+          backgroundColor: '#3a5a40', // Dark turquoise for secondary buttons
           color: '#ffffff', // White text
           '&:hover': {
-            backgroundColor: '#1e6f63', // Darker turquoise on hover
+            backgroundColor: '#2d6a4f', // Darker turquoise on hover
           },
         },
       },
